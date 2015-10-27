@@ -78,7 +78,6 @@ class Session(models.Model):
 
     @api.multi
     def action_confirm(self):
-        import pdb; pdb.set_trace()
         self.write({'state': 'confirmed'})
 
 
